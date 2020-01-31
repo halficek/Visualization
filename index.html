@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no"/>
+    <title>World happiness map</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Yanone+Kaffeesatz:200" rel="stylesheet">
+
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(49, 130, 189);
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: 200;
+            font-size: 18px;
+        }
+
+        #map-holder {
+            width: 100vw;
+            height: 87vh;
+        }
+
+        #slider {
+            width: 100vw;
+            height: 13vh;
+            color: #2A2C39;
+        }
+
+        .country {
+            stroke: #2A2C39;
+            stroke-width: 1;
+        }
+
+        .country-on {
+            fill: #75a3a3;
+        }
+
+        .countryLabel {
+            display: none;
+        }
+
+        .countryName {
+            fill: #252525;
+        }
+
+        .countryLabelBg {
+            fill: #d6d6c2;
+        }
+
+        .countryBar {
+            fill: #000000;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <div id="map-holder" style="max-height: 620px;"></div>
+</div>
+<div class="row">
+    <div id="slider"></div>
+</div>
+<script src="map.js" type="text/javascript"></script>
+<script src="slider.js" type="text/javascript"></script>
+</body>
+</html>
